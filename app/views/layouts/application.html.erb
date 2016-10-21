@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tsth</title>
+
+  	<title>Blog</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +12,17 @@
   </head>
 
   <body>
+		
+		<header id="main_navigation" class="clearfix">
+			<a href="#" class="name">Davi Pereira</a>		
+			<nav>
+			<%= link_to "Articles", posts_path %>
+				<a href="#">Projects</a>
+				<a href="#">Contact</a>
+			</nav>
+		</header>
+
+
     <%= yield %>
   </body>
 </html>
