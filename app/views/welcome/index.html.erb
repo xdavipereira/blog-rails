@@ -2,13 +2,7 @@
 			<div class="col-1 about homepage_content">
 				<h2>About</h2>
 				<hr>
-				<p>Auheauheauheuaadasdasdsadheuaheuahuehehuh</p>
-				<p>Auheauheauheuaheuaheuahueasdasdashehuh
-				Auheauheauheuaheuaheuah
-				ueasdasdashehuh <a href="#">	Auheau</a>
-				heauheuaheuaheuahueasdasdashe
-				huh</p>
-				<p>Auheauheauheuaheuaheuahuehehuasdh</p>
+				<p>Oi eu sou o Goku</p>
 
 			</div>
 
@@ -27,15 +21,13 @@
 			<div class="col-3 homepage_content">
 				<h2>Projects</h2>
 				<hr>
+
+				<% @projects.each do |project| %>
 				
-				<h3><a href="">The DO list</a></h3>
-					<p class="date">Friday April  10</p>
+					<h3><a href=""><%= link_to project.title, project %></a></h3>
+					<p class="date"><%= project.created_at.strftime("%A, %b %d")%></p>
 				
-				<h3><a href="">The DO list</a></h3>
-					<p class="date">Friday April  10</p>
-				
-				<h3><a href="">The DO list</a></h3>
-					<p class="date">Friday April  10</p>
+				<% end %>
 				
 			</div>
 		</div>
